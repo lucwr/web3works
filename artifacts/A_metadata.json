@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.11+commit.d7f03943"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "callHello",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addrB",
+						"type": "address"
+					}
+				],
+				"name": "setAddressB",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"callingFunction.sol": "A"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"callingFunction.sol": {
+			"keccak256": "0x3b9716a9d799988010a25f8cc6d6885e492055d23365d5bba8924dfec9187007",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://77aa1a46f99cecd98c5014b5ed5a12960358c4fccb600ab8cd6a6f02f1ac009e",
+				"dweb:/ipfs/QmXSBCNQZ3G9q6agYA9evyx2nDtFrmFJxcCAeV95mbdyAa"
+			]
+		}
+	},
+	"version": 1
+}
