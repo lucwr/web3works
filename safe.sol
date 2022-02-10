@@ -73,4 +73,14 @@ contract Safe {
     function getUserBalance () external  view returns (uint) {
         return user_balance[msg.sender];
     }
+    function forceWithdrawal (uint _amount) external returns (bool sent){
+        if(user_balance[msg.sender] <= user_details[msg.sender].goal_amount || block.timestamp >= user_details[msg.sender].start_time + user_details[msg.sender].time) {
+            require (user_balance[msg.sender] >= _amount, "Thief!!!");
+            uint interest = _amount *5/100 ;
+        user_balance[msg.sender] -= (_amount+ interest);
+        safe_balance -= (_amount+ interest);
+        (sent,) = address(this).call{value: _amount + interest}("");
+        return sent;
+        }
+    }
 }
