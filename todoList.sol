@@ -17,7 +17,7 @@ event TaskCompleted(uint id, bool completed);
 // This function creates a new instance of the Todo struct
 // It also maps the struct Id to the struct using the Get_List mapping
 // It also adds the new struct instance to an array of Todo structs called list_arr
-
+// It emits an event for the task created
  function createNewList( string calldata _title) external {
     Get_List[count] =  Todo(count, _title, false);
     list_arr.push(Todo(count, _title, false));
@@ -27,6 +27,7 @@ event TaskCompleted(uint id, bool completed);
 
  // This function find a todo struct from its id using te Get_List mapping function
  // It also updates the completed status of said struct to true
+ // It emist an event for the task completed
  function updateTodoStatus (uint id) external {
      Get_List[id].complete = true;
      emit TaskCompleted(id, true)
