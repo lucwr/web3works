@@ -49,6 +49,19 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "approveWhiteList",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -79,19 +92,19 @@
 	},
 	"sources": {
 		"IWhiteList.sol": {
-			"keccak256": "0x708416aae6dacb17abc2d808036e08033a135fd7cca8fb31d71769bfa51f6167",
+			"keccak256": "0x0e2332a4d79f2859d169db0fe9833bf940e9638d0a1b43eec4b4654410a96f5c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7c024e6f1a8be592c4de5f1ab215c4443654b816bf6d69435d1bca72e596b958",
-				"dweb:/ipfs/QmYf3PdCEqnimpgFcnmonWBDVHqZgvfyuKgVwNVay2GWgh"
+				"bzz-raw://d321128321a3585490ff61cd5106d36ec6cedb9bbe8211cc22cd48329713f06a",
+				"dweb:/ipfs/QmSJrJXrY7KYdXcvc3nHgvQoo6pobETwXjBxWMA45BwRno"
 			]
 		},
 		"calculator.sol": {
-			"keccak256": "0x575a1bae1a3013b586d8243b0403e1520ad2cfeeb7ffa6f769ab325cb61fae9c",
+			"keccak256": "0xb968c2bb3aa28777b4fc505ffc619119137ad17619aae85c014ccb39510cb22c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://9128ae5825b86282cf2d22fbfd7fa876eef4de8ff1c682edcf09bb6cee9d48f2",
-				"dweb:/ipfs/QmZ1UdXzXiB4JVGGw2nwM2sYP5tmm7aPHGimtM9EXCUcZr"
+				"bzz-raw://3d20784c1c037f04c0a3dc30ba06b9efccbd45719a46c21a174ec3111620bf16",
+				"dweb:/ipfs/Qmc7syKcshpJUmJv6ByB2V9ybPmZ4K4JS2nDex4VBanAf6"
 			]
 		}
 	},

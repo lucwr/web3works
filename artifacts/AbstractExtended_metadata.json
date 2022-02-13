@@ -13,6 +13,17 @@
 						"type": "address"
 					}
 				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
 				"name": "blacklist",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -103,7 +114,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"abstractContract.sol": "WhiteList"
+			"ContractForAbstract.sol": "AbstractExtended"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -117,6 +128,14 @@
 		"remappings": []
 	},
 	"sources": {
+		"ContractForAbstract.sol": {
+			"keccak256": "0x3ae807d052440d8f0f9cade9e8a5764c2b0659bc9a7c065537f8d5e3053db1bc",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4f909237c897c61ce88a0d9c5f689a312c752c384c1563a0563c25725c6eeaf2",
+				"dweb:/ipfs/QmWSEwnGwCqM2Rozjuyz76tbmx9vjKgRd9wfGCe5pjt7su"
+			]
+		},
 		"IWhiteList.sol": {
 			"keccak256": "0x45a02beeb1547c9d5f867fd69df9c73e3c5773b59d043c52805f4a0115f34a8e",
 			"license": "GPL-3.0",

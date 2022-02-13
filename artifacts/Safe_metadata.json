@@ -30,6 +30,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "forceWithdrawal",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "sent",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "getUserBalance",
 				"outputs": [
@@ -115,11 +134,11 @@
 	},
 	"sources": {
 		"safe.sol": {
-			"keccak256": "0x7206eec226ed3be48e4866332b38aaaa83f0080c9e7755ad7baa2f9c6ca266b9",
+			"keccak256": "0xbef8309b78c796167e1129fac1585aaa7477085bd909a8063bf72ae1da51114c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://5710226d23618dcb9d76da4d6d77b6dd24df0b21687c7c665d7aa600f7a91b8d",
-				"dweb:/ipfs/QmNpL3QiKxQCBJUM63nyDQAG4rEptrC2pvHidKX83RKMrr"
+				"bzz-raw://e6dfb65c8ed2a66095d8f359ba7bff403a1adf538ec4363533afd505df066541",
+				"dweb:/ipfs/Qma317ZkUkiKHn1T1nbKkpSPkCFNxYSJNaR9FEbixgrqnc"
 			]
 		}
 	},

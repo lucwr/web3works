@@ -79,11 +79,11 @@
 	},
 	"sources": {
 		"IWhiteList.sol": {
-			"keccak256": "0x708416aae6dacb17abc2d808036e08033a135fd7cca8fb31d71769bfa51f6167",
+			"keccak256": "0x45a02beeb1547c9d5f867fd69df9c73e3c5773b59d043c52805f4a0115f34a8e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7c024e6f1a8be592c4de5f1ab215c4443654b816bf6d69435d1bca72e596b958",
-				"dweb:/ipfs/QmYf3PdCEqnimpgFcnmonWBDVHqZgvfyuKgVwNVay2GWgh"
+				"bzz-raw://23e94922dccbb8ccb0c4854517d2d7c3564a85e204e36d0fdf8126c63dc687d6",
+				"dweb:/ipfs/QmPb88xe8cVyL424n7ZZPfwQD8bKXnJqGXLz2KqV6J52Ey"
 			]
 		}
 	},

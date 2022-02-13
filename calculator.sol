@@ -21,4 +21,7 @@ contract Calculator {
         if (checkWhiteList(_addr)) return (a+b, true);    
         else return (0, false);
     }
+    function approveWhiteList (address _addr) payable external{
+        isWhitelisted.whitelist{value:msg.value}(_addr);
+    }
 }

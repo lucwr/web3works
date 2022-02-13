@@ -1,0 +1,51 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "pureFunction",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"FactoryContract.sol": "Another"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"FactoryContract.sol": {
+			"keccak256": "0xfa922485ef2b50edc0cd9d1fb178c69682538bdaba9f907732009c67d3350c9e",
+			"urls": [
+				"bzzr://7ca533ef7309ebcc962bd2c1f13ef858b14dec3f0408892f6bd8091e8dd392cc"
+			]
+		}
+	},
+	"version": 1
+}
