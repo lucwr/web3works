@@ -10,28 +10,43 @@ struct Todo{
     string title;
     bool complete;
 }
-mapping(uint => Todo) Get_List;
-Todo[] list_arr;
-event TaskCreated(uint id, string content, bool completed);
-event TaskCompleted(uint id, bool completed);
+mapping(address => Todo[]) allTodos;
+address[] addresses;
+event TaskCreated(indexed uint id, string content, bool completed, address addedBy);
+event TaskCompleted(uint id, bool completed, address addedBy);
 // This function creates a new instance of the Todo struct
 // It also maps the struct Id to the struct using the Get_List mapping
-// It also adds the new struct instance to an array of Todo structs called list_arr
+// It also adds the new struct instance to an array of Todo structs called allTodos
 // It emits an event for the task created
  function createNewList( string calldata _title) external {
-    Get_List[count] =  Todo(count, _title, false);
-    list_arr.push(Todo(count, _title, false));
+  Todo memory _todo =  Todo ({
+       id: count,
+       title: _title,
+       complete: false
+   });
+    emit TaskCreated({
+        id:count,
+        content: _title,
+        complete: false,
+        addedBy:msg.sender
+    });
+   allTodos[msg.sender].push(_todo);
+   addresses.push(msg.sender);
     count++;
-    emit TaskCreated(count, _title, false;
  }
 
- // This function find a todo struct from its id using te Get_List mapping function
+ // This function find a todo struct from its id using the allTodos mapping function
  // It also updates the completed status of said struct to true
  // It emist an event for the task completed
  function updateTodoStatus (uint id) external {
-     Get_List[id].complete = true;
-     emit TaskCompleted(id, true)
+     allTodos[id].complete = true;
+      emit TaskCompleted({
+        id:count,
+        complete: true,
+        addedBy:msg.sender
+    });
  }
-
+// delete task 
+//blacklist address
 
 }
